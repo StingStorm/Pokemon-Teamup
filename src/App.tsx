@@ -1,9 +1,13 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import Form from './components/From/Form';
 
 function App() {
+  const {} = useState();
+
+  useEffect(() => {}, []);
   return (
     <div className="h-[400px] bg-sky-400">
-      <p>Welcome to Luna Edge technical interview</p>
+      <Form />
     </div>
   );
 }
