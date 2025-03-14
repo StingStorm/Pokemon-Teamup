@@ -1,12 +1,8 @@
-import { useEffect, useState } from 'react';
 import Form from './components/From/Form';
 
 function App() {
-  const {} = useState();
-
-  useEffect(() => {}, []);
   return (
-    <div className="h-[400px] bg-sky-400">
+    <div className="min-h-dvh bg-sky-400 flex justify-center items-center">
       <Form />
     </div>
   );

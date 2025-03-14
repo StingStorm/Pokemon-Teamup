@@ -1,3 +1,65 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    line-height: 1.25;
+  }
+  input:hover,
+  input:focus {
+    outline: none;
+  }
+}
+@layer components {
+  .scrollbar-custom {
+    scrollbar-width: thin;
+    scrollbar-color: #6b21a8 transparent;
+  }
+
+  /* Webkit */
+  .scrollbar-custom::-webkit-scrollbar {
+    width: 8px;
+  }
+  .scrollbar-custom::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    background-color: #6b21a8;
+    border-radius: 10px;
+  }
+
+  .fieldWrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+
+  .errorMassege {
+    @apply text-sm font-medium text-red-500;
+  }
+
+  .appButton {
+    @apply bg-purple-800 text-lg font-medium;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    margin: 0 auto;
+    padding: 4px 16px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: #fff;
+
+    transition: border-color 200ms linear, color 200ms linear,
+      background-color 200ms linear;
+  }
+
+  .appButton:hover,
+  .appButton:focus {
+    @apply border-purple-800 text-purple-800;
+
+    background-color: transparent;
+  }
+}
