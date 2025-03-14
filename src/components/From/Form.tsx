@@ -73,8 +73,6 @@ const Form = (props: FormProps) => {
     setIsModalOpen(true);
 
     setSprites(sprites1 || []);
-    console.log('response: ', sprites1);
-    console.log('state: ', sprites);
 
     console.log('отправили форму, ', data);
   });
